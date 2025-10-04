@@ -9,30 +9,30 @@ html {
 }
 
 body {
-    font-family: 'Consolas', 'Fira Code', monospace; /* Fuente diferente para un toque tech */
+    font-family: 'Consolas', 'Fira Code', monospace; 
     line-height: 1.6;
     margin: 0;
-    padding: 0; /* Sin padding exterior para un fondo más inmersivo */
+    padding: 0; 
     background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
-    color: #e0f7fa; /* Texto muy claro */
+    color: #e0f7fa; 
     min-height: 100vh;
 }
 
 .container {
     max-width: 900px;
-    margin: 40px auto; /* Más espacio vertical en desktop */
-    background: rgba(26, 26, 46, 0.95); /* Fondo oscuro semitransparente */
+    margin: 40px auto; 
+    background: rgba(26, 26, 46, 0.95); 
     backdrop-filter: blur(8px);
     padding: 0;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.15); /* Sombra con toque neón */
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.15); 
     border: 1px solid rgba(0, 240, 255, 0.1);
     overflow: hidden;
 }
 
 .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #0a081a 100%);
-    color: #00f0ff; /* Texto principal de neón */
+    color: #00f0ff; 
     text-align: center;
     padding: 50px 30px 40px;
     position: relative;
