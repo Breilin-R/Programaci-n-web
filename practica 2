@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electiva 2 Breilin Ramirez Reyes </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Electiva 2 (Virtual)</h1>
+            <p>| 2025-C-3 | Elvys Cruz</p>
+        </div>
+        
+        <div class="content">
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>👤 Estudiante</strong>
+                    Breilin Ramirez Reyes
+                </div>
+                <div class="info-item">
+                    <strong>🎓 Matrícula</strong>
+                    2024-1007
+                </div>
+                <div class="info-item">
+                    <strong>👨‍🏫 Profesor</strong>
+                    Elvys Cruz
+                </div>
+                <div class="info-item">
+                    <strong>📚 Curso</strong>
+                    2025-C-3 TDS-016 Aula Virtual
+                </div>
+                <div class="info-item">
+                    <strong>⚡ Actividad</strong>
+                    Crear pagina web usando github.io
+                </div>
+            </div>
+            
+            <h2>Crear página web usando GitHub.io</h2>
+            
+            <div class="objective-card">
+                <strong>Objetivo:</strong>  Crear un repositorio conteniendo una página web y utilizar GitHub.io para automatizar la creación de la página con el contenido del repositorio.
+            </div>
+            
+            <h2>Información del Proyecto</h2>
+            <div class="project-buttons">
+                <a href="https://github.com/Breilin-R/electiva-2" class="btn-link" target="_blank">
+                    <strong>📂 Repositorio GitHub</strong>
+                    https://github.com/Breilin-R/electiva-2
+                </a>
+
+
+
+
+
+
+
+
+
+                <a href="#" class="btn-link" target="_blank">
+                    <strong>🌐 GitHub Pages URL</strong>
+                    link
+                </a>
+            </div>
+            
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Sql</span>
+                
+            </div>
+            
+            <h2>Proceso de Desarrollo</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <strong>Crear repositorio</strong><br>
+                        Nuevo repositorio en GitHub llamado "Electiva2"
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <strong>Subir archivos</strong><br>
+                        Crear y subir archivo index.html
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <strong>Activar GitHub Pages</strong><br>
+                        Settings → Pages → Deploy from branch
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <strong>Despliegue automático</strong><br>
+                        Página disponible en GitHub.io
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Desarrollado para la materia Electiva 2 - DevOps Tools and Technologies</p>
+            <p>&copy; 2025 Anddy Josue Jara Ramirez</p>
+        </div>
+    </div>
+</body>
+</html>
