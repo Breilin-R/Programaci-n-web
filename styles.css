@@ -1,4 +1,3 @@
-/* Global Reset for Box Model */
 html {
     box-sizing: border-box;
 }
@@ -9,9 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-/* --- Estilos del Tema Dark Tech --- */
-
-/* Fondo y tipografía principal */
 body {
     font-family: 'Consolas', 'Fira Code', monospace; /* Fuente diferente para un toque tech */
     line-height: 1.6;
@@ -34,7 +30,6 @@ body {
     overflow: hidden;
 }
 
-/* Encabezado con acento neón */
 .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #0a081a 100%);
     color: #00f0ff; /* Texto principal de neón */
@@ -51,7 +46,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Patrón de fondo más oscuro y sutil */
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
     opacity: 0.2;
 }
@@ -76,7 +70,6 @@ body {
     padding: 40px;
 }
         
-/* Grid de información */
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -85,10 +78,10 @@ body {
 }
         
 .info-item {
-    background: #2c2c44; /* Fondo de tarjeta oscuro */
+    background: #2c2c44; 
     padding: 20px;
     border-radius: 10px;
-    border-left: 4px solid #00f0ff; /* Borde de acento neón */
+    border-left: 4px solid #00f0ff; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -108,10 +101,9 @@ body {
 .info-item p {
     color: #b3e5fc;
 }
-        
-/* Títulos */
+
 h2 {
-    color: #33ccff; /* Color de título azul brillante */
+    color: #33ccff; 
     margin: 40px 0 25px 0;
     font-size: 1.8rem;
     position: relative;
@@ -119,7 +111,7 @@ h2 {
 }
         
 h2::before {
-    content: '//'; /* Estilo de comentario de código */
+    content: '//'; 
     position: absolute;
     left: 0;
     top: 50%;
@@ -128,11 +120,10 @@ h2::before {
     font-weight: bold;
     font-size: 1.2rem;
 }
-        
-/* Tarjeta de Objetivo (Invertida) */
+
 .objective-card {
-    background: linear-gradient(135deg, #00f0ff 0%, #33ccff 100%); /* Fondo muy brillante */
-    color: #1a1a2e; /* Texto muy oscuro */
+    background: linear-gradient(135deg, #00f0ff 0%, #33ccff 100%); 
+    color: #1a1a2e; 
     padding: 30px;
     border-radius: 12px;
     margin: 25px 0;
@@ -142,7 +133,7 @@ h2::before {
 }
         
 .objective-card::after {
-    content: '>>'; /* Símbolo tech */
+    content: '>>'; 
     position: absolute;
     top: 15px;
     right: 20px;
@@ -155,7 +146,7 @@ h2::before {
     margin-top: 0;
 }
         
-/* Botones de Proyectos */
+
 .project-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -165,12 +156,12 @@ h2::before {
         
 .btn-link {
     display: block;
-    background: #30304a; /* Color de botón oscuro */
+    background: #30304a; 
     color: #e0f7fa;
     text-decoration: none;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #00f0ff; /* Borde neón */
+    border: 1px solid #00f0ff; 
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.1);
     position: relative;
@@ -184,13 +175,13 @@ h2::before {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(0, 240, 255, 0.1); /* Brillo al pasar el ratón */
+    background: rgba(0, 240, 255, 0.1); 
     transition: left 0.5s ease;
 }
         
 .btn-link:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5); /* Sombra de neón más intensa */
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5); 
     background: #3a3a5a;
 }
         
@@ -202,14 +193,13 @@ h2::before {
     display: block;
     font-size: 1.1rem;
     margin-bottom: 5px;
-    color: #00f0ff; /* Título neón */
+    color: #00f0ff; 
 }
 
 .btn-link p {
     font-size: 0.95rem;
 }
         
-/* Etiquetas de tecnología (Tags) */
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -218,10 +208,10 @@ h2::before {
 }
         
 .tech-tag {
-    background: #00f0ff; /* Fondo neón */
+    background: #00f0ff; 
     color: #1a1a2e;
     padding: 8px 16px;
-    border-radius: 4px; /* Bordes menos redondeados */
+    border-radius: 4px; 
     font-size: 0.85rem;
     font-weight: 700;
     box-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
@@ -233,7 +223,6 @@ h2::before {
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
 }
         
-/* Contenedor de Pasos (Steps) */
 .steps-container {
     background: #20203a;
     border-radius: 10px;
@@ -277,7 +266,7 @@ h2::before {
     color: #e0f7fa;
 }
         
-/* Pie de página */
+
 .footer {
     background: #0a081a;
     color: #666;
@@ -293,7 +282,6 @@ h2::before {
     font-size: 0.8rem;
 }
         
-/* Media Query para móvil */
 @media (max-width: 768px) {
     body {
         padding: 10px;
