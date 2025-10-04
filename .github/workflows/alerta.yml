@@ -1,0 +1,33 @@
+name: Notificacion de PUSH a Main
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout del Codigo
+        uses: actions/checkout@v4
+      
+      - name: Enviar Notificacion a ntfy.sh
+        run: |
+          MENSAJE="🚀 ¡PUSH Exitoso a Main! 🚀
+          Repo: ${{ github.repository }}
+          Commit: ${{ github.sha }}
+          Usuario: ${{ github.actor }}"
+          
+          curl -d "$MENSAJE" \
+               -H "Título: GitHub Actions CI/CD Completado" \
+               -H "Prioridad: 3" \
+               https://ntfy.sh/devops-itla
+      
+      - name: Ejecutar Programa
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node index.js
