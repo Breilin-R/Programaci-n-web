@@ -1,0 +1,94 @@
+/* Variables de color para consistencia */
+:root {
+    --color-fondo-oscuro: #0c0816;
+    --color-fondo-secundario: #1c1427;
+    --color-acento-rosa: #ff69b4;
+    --color-acento-purpura: #6a0dad;
+    --color-texto-claro: #e6e6fa;
+    --color-enlace-cian: #8af3ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Degradado de fondo nocturno */
+    background: linear-gradient(135deg, var(--color-fondo-secundario) 0%, var(--color-fondo-oscuro) 100%);
+    color: var(--color-texto-claro);
+    min-height: 100vh;
+    text-align: center; /* Centra el título y el enlace 'home' */
+}
+
+h1 {
+    color: var(--color-acento-rosa); /* Rosa vibrante para el título */
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    border-bottom: 2px solid var(--color-acento-purpura);
+    padding-bottom: 10px;
+    display: inline-block; /* Hace que la línea inferior se ajuste al texto */
+}
+
+/* Estilo para la lista de valores */
+ol {
+    list-style: none; /* Quitamos las marcas por defecto */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: var(--color-fondo-secundario);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+li {
+    font-size: 1.4em;
+    padding: 15px 20px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #332644; /* Separador sutil */
+    color: var(--color-texto-claro);
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li:last-child {
+    border-bottom: none; /* No hay borde en el último elemento */
+}
+
+/* Decoración personalizada para cada valor */
+li:before {
+    content: '⭐'; /* Usa una estrella o cualquier otro ícono que te guste */
+    color: var(--color-acento-rosa);
+    margin-right: 15px;
+    font-size: 1.1em;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    background-color: #3f2f56; /* Resaltado al pasar el cursor */
+    color: var(--color-enlace-cian);
+}
+
+li:hover:before {
+    content: '✅'; /* Cambia el ícono al pasar el cursor para dar un efecto de "selección" */
+    transform: scale(1.1);
+}
+
+/* Estilo para el enlace "home" */
+a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: var(--color-acento-rosa);
+    color: var(--color-fondo-oscuro);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #ffb8d9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}

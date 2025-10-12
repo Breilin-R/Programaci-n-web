@@ -1,0 +1,55 @@
+/* Estilos para el Tema Nocturno */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Degradado de fondo con tonos oscuros y fríos */
+    background: linear-gradient(135deg, #1c1427 0%, #0c0816 100%);
+    color: #e6e6fa; /* Lavanda para el texto general */
+    min-height: 100vh;
+}
+
+h1 {
+    color: #ff69b4; /* Rosa brillante para el título */
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5); /* Sombra luminosa */
+    border-bottom: 2px solid #6a0dad; /* Línea de acento púrpura */
+    padding-bottom: 10px;
+}
+
+ol {
+    list-style: none; /* Quitamos las marcas de lista predeterminadas */
+    padding: 0;
+    margin-top: 30px;
+}
+
+ol li {
+    margin-bottom: 15px;
+}
+
+ol li a {
+    color: #8af3ff; /* Cian brillante para los enlaces */
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; /* Espacio para el guion decorativo */
+}
+
+/* Crea un guion decorativo con color de acento */
+ol li a:before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #6a0dad; /* Púrpura oscuro */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ol li a:hover {
+    color: #ff69b4; /* El texto se vuelve rosa al pasar el cursor */
+    transform: translateX(5px); /* Pequeño movimiento para indicar interactividad */
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.7);
+}

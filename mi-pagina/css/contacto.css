@@ -1,0 +1,101 @@
+/* Variables de color para consistencia */
+:root {
+    --color-fondo-oscuro: #0c0816;
+    --color-fondo-secundario: #1c1427;
+    --color-acento-rosa: #ff69b4;
+    --color-acento-purpura: #6a0dad;
+    --color-texto-claro: #e6e6fa;
+    --color-enlace-cian: #8af3ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Degradado de fondo con tonos oscuros y fríos */
+    background: linear-gradient(135deg, var(--color-fondo-secundario) 0%, var(--color-fondo-oscuro) 100%);
+    color: var(--color-texto-claro);
+    min-height: 100vh;
+    /* Eliminamos display: flex para un flujo de documento normal */
+    /* Y centramos el contenido usando auto-márgenes en el contenedor */
+}
+
+/* Contenedor principal de la tarjeta de perfil */
+div {
+    background-color: var(--color-fondo-secundario);
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--color-acento-purpura); /* Sombra con toque púrpura */
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    
+    /* Centramos la tarjeta horizontalmente */
+    margin: 40px auto; 
+    
+    box-sizing: border-box;
+    text-align: center; /* Centra los elementos dentro de la tarjeta (h2, img) */
+}
+
+h2 {
+    color: var(--color-acento-rosa);
+    font-size: 2.5em;
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-acento-purpura);
+    padding-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+}
+
+img {
+    width: 150px; /* Tamaño de la imagen de perfil */
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen perfectamente redonda */
+    object-fit: cover;
+    border: 5px solid var(--color-acento-rosa); /* Borde de acento */
+    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom sutil al pasar el cursor */
+}
+
+/* Esta sección alinea la información de contacto a la izquierda dentro de la tarjeta */
+div h3, div h5 {
+    text-align: left; /* Alineamos el texto a la izquierda para mejor lectura */
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 8px 0;
+    padding-left: 10px;
+    border-left: 3px solid var(--color-acento-purpura); /* Decoración lateral */
+}
+
+h5 {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #2a1f3d; /* Fondo ligeramente más claro para el texto descriptivo */
+    border-radius: 8px;
+    text-align: justify;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--color-acento-rosa);
+    color: var(--color-fondo-oscuro); /* Texto oscuro sobre botón claro */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #ffb8d9; /* Tono más claro al pasar el ratón */
+    transform: translateY(-3px); /* Efecto 3D sutil */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}

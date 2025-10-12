@@ -1,0 +1,95 @@
+/* Variables de color para consistencia */
+:root {
+    --color-fondo-oscuro: #0c0816;
+    --color-fondo-secundario: #1c1427;
+    --color-acento-rosa: #ff69b4;
+    --color-acento-purpura: #6a0dad;
+    --color-texto-claro: #e6e6fa;
+    --color-enlace-cian: #8af3ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Degradado de fondo nocturno */
+    background: linear-gradient(135deg, var(--color-fondo-secundario) 0%, var(--color-fondo-oscuro) 100%);
+    color: var(--color-texto-claro);
+    min-height: 100vh;
+    text-align: center; /* Centra el título y el enlace 'home' */
+}
+
+h1 {
+    color: var(--color-acento-rosa); /* Rosa vibrante para el título */
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    border-bottom: 2px solid var(--color-acento-purpura);
+    padding-bottom: 10px;
+    display: inline-block; /* Hace que la línea inferior se ajuste al texto */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse;
+    background-color: var(--color-fondo-secundario);
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que los bordes redondeados funcionen */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo del encabezado de la tabla */
+thead tr {
+    background-color: var(--color-acento-purpura);
+    color: var(--color-texto-claro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th {
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 1px solid #332644; /* Borde sutil */
+}
+
+/* Estilo de las filas del cuerpo */
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2a1f3d; /* Tono ligeramente diferente para filas pares */
+}
+
+tbody tr:hover {
+    background-color: #3f2f56; /* Resaltar fila al pasar el cursor */
+    color: var(--color-acento-rosa);
+}
+
+td {
+    padding: 12px 15px;
+    border: 1px solid #332644; /* Borde sutil */
+}
+
+/* Estilo para el enlace "home" */
+a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: var(--color-acento-rosa);
+    color: var(--color-fondo-oscuro);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #ffb8d9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}

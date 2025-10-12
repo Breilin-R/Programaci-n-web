@@ -1,0 +1,83 @@
+/* Variables de color para consistencia */
+:root {
+    --color-fondo-oscuro: #0c0816;
+    --color-fondo-secundario: #1c1427;
+    --color-acento-rosa: #ff69b4;
+    --color-acento-purpura: #6a0dad;
+    --color-texto-claro: #e6e6fa;
+    --color-enlace-cian: #8af3ff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Degradado de fondo nocturno */
+    background: linear-gradient(135deg, var(--color-fondo-secundario) 0%, var(--color-fondo-oscuro) 100%);
+    color: var(--color-texto-claro);
+    min-height: 100vh;
+    text-align: center; /* Centra el título y el enlace 'home' */
+}
+
+h1 {
+    color: var(--color-acento-rosa); /* Rosa vibrante */
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    border-bottom: 2px solid var(--color-acento-purpura);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--color-enlace-cian); /* Cian para subtítulos */
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal para el proyecto */
+.proyecto-card {
+    background-color: var(--color-fondo-secundario);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto 40px; /* Centra la tarjeta y añade margen inferior */
+    text-align: left; /* Alinea el texto del proyecto a la izquierda */
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    text-align: justify; /* Justifica el texto para una apariencia limpia */
+    margin: 0;
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no desborde la tarjeta */
+    height: auto;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto 20px auto; /* Centra la imagen y añade espacio abajo */
+    border-radius: 8px;
+    border: 3px solid var(--color-acento-purpura);
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.5); /* Resplandor púrpura alrededor de la imagen */
+}
+
+/* Estilo para el enlace "home" */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: var(--color-acento-rosa);
+    color: var(--color-fondo-oscuro);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #ffb8d9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
